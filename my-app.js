@@ -72,7 +72,7 @@ class App extends routerMixin(outletMixin(linkMixin(LitElement))) {
 
   linkClick(event) {
     event.preventDefault();
-    this.navigate(this.href);
+    this.navigate(event.target.href);
   }
 }
 
