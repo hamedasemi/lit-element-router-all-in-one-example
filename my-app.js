@@ -8,9 +8,9 @@
 import {} from "@webcomponents/webcomponentsjs/webcomponents-loader.js";
 
 import { LitElement, html } from "lit-element";
-import { routerMixin, outletMixin, linkMixin } from "lit-element-router";
+import { routerMixin, outletMixin, navigateMixin } from "lit-element-router";
 
-class App extends routerMixin(outletMixin(linkMixin(LitElement))) {
+class App extends routerMixin(outletMixin(navigateMixin(LitElement))) {
   static get properties() {
     return {
       params: { type: Object },
